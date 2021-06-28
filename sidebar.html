@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Harsh Tech - The World for Computer Lovers</title>
+	
+	<link href='https://fonts.googleapis.com/css?family=RobotoDraft' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="css/font-awesome.min.css"><style>
+html,body,h1,h2,h3,h4,h5 {font-family: "RobotoDraft","Roboto",sans-serif;}
+.w3-sidenav a {padding:16px;font-weight:bold}
+</style>
+
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/mainstyle.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/modern-business.css" rel="stylesheet">
+
+	 
+    <!-- W3.CSS -->
+	<link rel="stylesheet" href="css/w3.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="icon" href="favicon.ico" type="image/x-icon"> 
+	
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+<nav class="w3-sidenav w3-collapse w3-white w3-animate-left w3-card-2" style="z-index:3;width:250px;">
+  <a href="#" class="w3-border-bottom w3-xxlarge"><img src="images/my.jpg" style="width:100%;height:150%"></a>
+  <a href="#" onclick="w3_close()" class="w3-text-teal w3-hide-large w3-closenav w3-large">Close &times;</a>
+  <a href="index.html" class="w3-light-grey w3-medium">Home</a>		
+  <a href="about.html">About</a>		
+  <a href="Download.html">Download</a>		
+  <a href="contact.html">Contact</a>			
+  <div class="w3-accordion">
+    <a onclick="myAccordion('demo1')" href="#">Tutorial <i class="fa fa-caret-down"></i></a>
+    <div id="demo1" class="w3-accordion-content w3-animate-left w3-padding">
+      <a href="Tutorial-1-col.html">Tutorial Column 1</a>
+      <a href="Tutorial-2-col.html">Tutorial Column 2</a>
+      <a href="Tutorial-3-col.html">Tutorial Column 3</a>
+	  <a href="Tutorial-item.html">Tutorial Latest Item</a>
+    </div>
+  </div>
+  <div class="w3-accordion">
+    <a onclick="myAccordion('demo2')" href="#">Blog <i class="fa fa-caret-down"></i></a>
+    <div id="demo2" class="w3-accordion-content w3-animate-left w3-padding">
+      <a href="daily-ping.html">Daily Ping</a>
+      <a href="blog-home-1.html">Blog Home</a>
+      <a href="blog-post.html">Blog Post</a>
+    </div>
+  </div>
+  <div class="w3-accordion">
+    <a onclick="myAccordion('demo3')" href="#">Other Pages <i class="fa fa-caret-down"></i></a>
+    <div id="demo3" class="w3-accordion-content w3-animate-left w3-padding">
+      <a href="full-width.html">Full Width Pages</a>
+      <a href="#">Side bar</a>
+      <a href="faq.html">FAQ</a>
+	  <a href="404.html">404 Page</a>
+	  <a href="pricing.html">Pricing Table</a>
+    </div>
+  </div>
+  <a href="sitemap.html">Site Map</a>		
+</nav>
+
+   <!-- Page Content -->
+   <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer"></div>
+
+<div class="w3-main" style="margin-left:250px;">
+
+ <div id="myTop" class="w3-top w3-container w3-padding-16 w3-theme-green w3-large">
+  <i class="fa fa-bars w3-opennav w3-hide-large w3-xlarge w3-margin-left w3-margin-right" onclick="w3_open()"></i>
+
+    <div class="container">
+
+        <!-- Page Heading/Breadcrumbs -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">Sidebar Page
+                    <small>Subheading</small>
+                </h1>
+                <ol class="breadcrumb">
+                    <li><a href="index.html">Home</a>
+                    </li>
+                    <li class="active">Sidebar Page</li>
+                </ol>
+            </div>
+        </div>
+		<!-- Content Column -->
+            <div class="col-md-9">
+                <h2>Section Heading</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, et temporibus, facere perferendis veniam beatae non debitis, numquam blanditiis necessitatibus vel mollitia dolorum laudantium, voluptate dolores iure maxime ducimus fugit.</p>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <hr>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-jumbo w3-theme">
+  <h4>Follow Us</h4>
+  <a class="w3-btn-floating w3-teal" href="#" title="Facebook"><i class="fa fa-facebook"></i></a>
+  <a class="w3-btn-floating w3-teal" href="#" title="Twitter"><i class="fa fa-twitter"></i></a>
+  <a class="w3-btn-floating w3-teal" href="#" title="Google +"><i class="fa fa-google-plus"></i></a>
+  <a class="w3-btn-floating w3-teal" href="#" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+  <p>&#169; Copyright Harsh Tech 2016</p>					
+</footer>
+
+     
+</div>
+
+<script>
+function w3_open() {
+    document.getElementsByClassName("w3-sidenav")[0].style.display = "block";
+    document.getElementsByClassName("w3-overlay")[0].style.display = "block";
+}
+function w3_close() {
+    document.getElementsByClassName("w3-sidenav")[0].style.display = "none";
+    document.getElementsByClassName("w3-overlay")[0].style.display = "none";
+}
+</script>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+    if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+        document.getElementById("myTop").classList.add("w3-card-4");
+        document.getElementById("myIntro").classList.add("w3-show-inline-block");
+    } else {
+        document.getElementById("myIntro").classList.remove("w3-show-inline-block");
+        document.getElementById("myTop").classList.remove("w3-card-4");
+    }
+}
+
+function myAccordion(id) {
+    document.getElementById(id).classList.toggle("w3-show");
+    document.getElementById(id).previousElementSibling.classList.toggle("w3-theme");
+}
+</script>
