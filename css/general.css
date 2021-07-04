@@ -1,0 +1,277 @@
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+q,
+ruby,
+s,
+samp,
+section,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block
+}
+
+body {
+    line-height: 1
+}
+
+ol,
+ul {
+    list-style: none
+}
+
+blockquote,
+q {
+    quotes: none
+}
+
+blockquote:after,
+blockquote:before,
+q:after,
+q:before {
+    content: '';
+    content: none
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+@font-face {
+    font-family: Galeria;
+    src: url(../fonts/Galeria-Bold.otf) format("opentype")
+}
+
+@font-face {
+    font-family: Galeria-Medium;
+    src: url(../fonts/Galeria-Medium.otf) format("opentype")
+}
+
+::-webkit-scrollbar {
+    width: 0
+}
+
+a {
+    text-decoration: none
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both
+}
+
+body{
+    height: auto;
+    width: auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color:brown;
+}
+.disabled{
+    pointer-events: none;
+}
+.logo{
+    position: relative;
+    float: left;
+    font-family: Galeria;
+    font-size: 44px;
+    transition: color .2s;
+}
+nav{
+    top: 30px;
+    width: 100%;
+    height: 50px;
+    z-index: 2;
+}
+.top-nav-list-item-link {
+    float: right;
+    height: 100%;
+    padding-top: 16px
+}
+
+.top-nav-list-item {
+    float: left;
+    margin-right: 30px;
+    counter-increment: item 1;
+    display: inline;
+}
+
+.container{
+    width: 100%;
+}
+.top-nav-list{
+    float: right;
+    /* display: inline-block; */
+}
+.dev-links {
+    position: fixed;
+    bottom: 0;
+    left: 5%;
+    transform: translateX(-50%);
+    /* width: 1700px; */
+    z-index: 2
+}
+.social-links {
+    position: fixed;
+    bottom: 0;
+    left: 12%;
+    transform: translateX(-50%);
+    /* width: 1700px; */
+    z-index: 2
+}
+
+
+.gmail,
+.dev,
+.social {
+    position: absolute;
+    margin-right: 16px;
+    bottom: 0
+}
+
+.gmail__link:hover,
+.dev-list-item:hover,
+.social-list-item:hover {
+    transform: translateY(-3px)
+}
+.dev-list::after,
+.social-list:after {
+    display: block;
+    margin: 0 auto;
+    /* width: 1px;
+    height: 40px; */
+    background: #f7e0b5
+}
+.dev-list-item,
+.social-list-item {
+    margin-bottom: 10px;
+    /* width: 20px;
+    height: 20px; */
+    transition: transform .2s
+}
+.dev-list-item:hover .dev-list-icon,
+.social-list-item:hover .social-list-icon {
+    stroke: #7dcbd8
+}
+.dev-list-icon,
+.social-list-icon {
+    fill: none;
+    stroke: #f7e0b5
+}
+
+.gmail {
+    right: 0
+}
+
+.gmail-name:after {
+    display: block;
+    margin: 0 auto;
+    /* width: 1px;
+    height: 40px; */
+    background: #f7e0b5
+}
+
+.gmail-link {
+    margin-bottom: 10px;
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl;
+    font-family: Galeria-Medium;
+    font-size: 14px;
+    color: #f7e0b5;
+    transition: transform .2s
+}
+
+.gmail-link:hover {
+    color: #7dcbd8
+}

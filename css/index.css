@@ -1,0 +1,36 @@
+.developer-info {
+    position: absolute;
+    right: 0;
+    width: 50%;
+    margin-right: 16px;
+}
+
+.developer-info-subtitle,
+.developer-info-title {
+    font-family: Galeria;
+    font-size: 70px;
+    color: #f7e0b5
+}
+
+.developer-info-title {
+    margin-bottom: 10px
+}
+
+.developer-info-subtitle {
+    margin-bottom: 40px;
+    font-size: 67px
+}
+
+.developer-info-name {
+    color: #2a333c
+}
+
+.developer-info-para {
+    margin-bottom: 40px;
+    font-family: Galeria-Medium;
+    font-size: 24px;
+    word-spacing: 8px;
+    text-align: justify;
+    line-height: 45px;
+    color: #f7e0b5
+}
