@@ -167,6 +167,26 @@ body{
     font-family: Galeria;
     font-size: 44px;
     transition: color .2s;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+.logo:after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #f7e0b5;
+    transition: background .2s
+}
+
+.logo:hover {
+    color: #7dcbd8
+}
+
+.logo:hover:after {
+    background-color: #7dcbd8
 }
 nav{
     top: 30px;
@@ -197,7 +217,7 @@ nav{
 .dev-links {
     position: fixed;
     bottom: 0;
-    left: 5%;
+    left: 2%;
     transform: translateX(-50%);
     /* width: 1700px; */
     z-index: 2
@@ -205,7 +225,7 @@ nav{
 .social-links {
     position: fixed;
     bottom: 0;
-    left: 12%;
+    left: 4%;
     transform: translateX(-50%);
     /* width: 1700px; */
     z-index: 2
@@ -275,3 +295,123 @@ nav{
 .gmail-link:hover {
     color: #7dcbd8
 }
+.preloader-letter{
+    float: left;
+    /* margin-right: 30px; */
+    /* counter-increment: item 1; */
+    display: inline;
+}
+
+.preloader-letter,svg,circle{
+    stroke: black;
+    stroke-width: 5;
+ }
+ 
+.preloader,
+.preloader-word {
+    top: 50%;
+    left: 50%;
+    visibility: visible;
+    transform: translate(-50%, -50%);
+    animation: slideup 1.5s ease 3.2s 1 normal forwards;
+}
+@keyframes slideup {
+    from{
+        top:50%
+    }
+    to{
+        top:-120%
+    }
+}
+.preloader {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #f7e0b5;
+    z-index: 1;
+    align-items: center;
+}
+
+.preloader-word {
+    align-items:center;
+    position:absolute;
+    display: block;
+    width: 1260px;
+    height: 240px;
+
+}
+.letter-W circle:nth-child(2),
+.letter-W circle:nth-child(4),
+.letter-W circle:nth-child(5),
+.letter-W circle:nth-child(6) {
+    -webkit-animation: fillColor .4s ease forwards .4s;
+    animation: fillColor .4s ease forwards .4s;
+}
+.letter-E-1 circle:nth-child(1),
+.letter-E-1 circle:nth-child(5) {
+    -webkit-animation: fillColor .4s ease forwards .4s;
+    animation: fillColor .4s ease forwards .4s;
+    animation-delay: 0.8s;
+}
+.letter-L circle:nth-child(1),
+.letter-L circle:nth-child(2),
+.letter-L circle:nth-child(3) {
+    -webkit-animation: fillColor .4s ease forwards .4s;
+    animation: fillColor .4s ease forwards .4s;
+    animation-delay: 1.2s;
+}
+.letter-C circle:nth-child(1),
+.letter-C circle:nth-child(4) {
+    -webkit-animation: fillColor .4s ease forwards .4s;
+    animation: fillColor .4s ease forwards .4s;
+    animation-delay: 1.6s;
+}
+.letter-O circle:nth-child(1),
+.letter-O circle:nth-child(3),
+.letter-O circle:nth-child(5) {
+    -webkit-animation: fillColor .4s ease forwards .4s;
+    animation: fillColor .4s ease forwards .4s;
+    animation-delay: 2.0s;
+}
+.letter-M circle:nth-child(1),
+.letter-M circle:nth-child(3),
+.letter-M circle:nth-child(4) {
+    -webkit-animation: fillColor .4s ease forwards .4s;
+    animation: fillColor .4s ease forwards .4s;
+    animation-delay: 2.4s;
+}
+.letter-E circle:nth-child(1),
+.letter-E circle:nth-child(5){
+    -webkit-animation: fillColor .4s ease forwards .4s;
+    animation: fillColor .4s ease forwards .4s;
+    animation-delay: 2.8s;
+}
+@-webkit-keyframes fillColor {
+    from {
+        fill: wheat
+    }
+    to {
+        fill: brown
+    }
+}
+
+@keyframes fillColor {
+    from {
+        fill: wheat
+    }
+    to {
+        fill: brown
+    }
+}
+
+@-webkit-keyframes hide {
+    to {
+        opacity: 0
+    }
+}
+
+@keyframes hide {
+    to {
+        opacity: 0
+    }
+} 
