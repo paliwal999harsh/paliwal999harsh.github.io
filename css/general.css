@@ -256,8 +256,8 @@ nav{
 .dev-list-item,
 .social-list-item {
     margin-bottom: 10px;
-    /* width: 20px;
-    height: 20px; */
+    width: 20px;
+    height: 20px;
     transition: transform .2s
 }
 .dev-list-item:hover .dev-list-icon,
@@ -277,8 +277,8 @@ nav{
 .gmail-name:after {
     display: block;
     margin: 0 auto;
-    /* width: 1px;
-    height: 40px; */
+    width: 1px;
+    height: 40px;
     background: #f7e0b5
 }
 
