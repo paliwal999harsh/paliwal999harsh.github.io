@@ -169,9 +169,10 @@ body{
     transition: color .2s;
     padding-top: 10px;
     padding-left: 10px;
+    color: wheat;
 }
 .logo:after {
-    content: '';
+    /* content: ''; */
     position: absolute;
     bottom: -3px;
     left: 0;
@@ -182,11 +183,11 @@ body{
 }
 
 .logo:hover {
-    color: #7dcbd8
+    color: #7dcbd8;
 }
 
 .logo:hover:after {
-    background-color: #7dcbd8
+    background-color: wheat;
 }
 nav{
     top: 30px;
@@ -197,7 +198,8 @@ nav{
 .top-nav-list-item-link {
     float: right;
     height: 100%;
-    padding-top: 16px
+    padding-top: 16px;
+    color: wheat;
 }
 
 .top-nav-list-item {
@@ -205,6 +207,11 @@ nav{
     margin-right: 30px;
     counter-increment: item 1;
     display: inline;
+    color:wheat;
+    font-size: 20px;
+}
+.top-nav-list-item-link:hover{
+    color:#7dcbd8;
 }
 
 .container{
@@ -313,7 +320,7 @@ nav{
     left: 50%;
     visibility: visible;
     transform: translate(-50%, -50%);
-    animation: slideup 1.5s ease 3.2s 1 normal forwards;
+    animation: slideup 1s ease 2.0s 1 normal forwards;
 }
 @keyframes slideup {
     from{
@@ -344,47 +351,47 @@ nav{
 .letter-W circle:nth-child(4),
 .letter-W circle:nth-child(5),
 .letter-W circle:nth-child(6) {
-    -webkit-animation: fillColor .4s ease forwards .4s;
-    animation: fillColor .4s ease forwards .4s;
+    -webkit-animation: fillColor .2s ease forwards .2s;
+    animation: fillColor .2s ease forwards .2s;
 }
 .letter-E-1 circle:nth-child(1),
 .letter-E-1 circle:nth-child(5) {
-    -webkit-animation: fillColor .4s ease forwards .4s;
-    animation: fillColor .4s ease forwards .4s;
-    animation-delay: 0.8s;
+    -webkit-animation: fillColor .2s ease forwards .2s;
+    animation: fillColor .2s ease forwards .2s;
+    animation-delay: 0.4s;
 }
 .letter-L circle:nth-child(1),
 .letter-L circle:nth-child(2),
 .letter-L circle:nth-child(3) {
-    -webkit-animation: fillColor .4s ease forwards .4s;
-    animation: fillColor .4s ease forwards .4s;
-    animation-delay: 1.2s;
+    -webkit-animation: fillColor .2s ease forwards .2s;
+    animation: fillColor .2s ease forwards .2s;
+    animation-delay: 0.6s;
 }
 .letter-C circle:nth-child(1),
 .letter-C circle:nth-child(4) {
-    -webkit-animation: fillColor .4s ease forwards .4s;
-    animation: fillColor .4s ease forwards .4s;
-    animation-delay: 1.6s;
+    -webkit-animation: fillColor .2s ease forwards .2s;
+    animation: fillColor .2s ease forwards .2s;
+    animation-delay: 0.8s;
 }
 .letter-O circle:nth-child(1),
 .letter-O circle:nth-child(3),
 .letter-O circle:nth-child(5) {
-    -webkit-animation: fillColor .4s ease forwards .4s;
-    animation: fillColor .4s ease forwards .4s;
-    animation-delay: 2.0s;
+    -webkit-animation: fillColor .2s ease forwards .2s;
+    animation: fillColor .2s ease forwards .2s;
+    animation-delay: 1.0s;
 }
 .letter-M circle:nth-child(1),
 .letter-M circle:nth-child(3),
 .letter-M circle:nth-child(4) {
-    -webkit-animation: fillColor .4s ease forwards .4s;
-    animation: fillColor .4s ease forwards .4s;
-    animation-delay: 2.4s;
+    -webkit-animation: fillColor .2s ease forwards .2s;
+    animation: fillColor .2s ease forwards .2s;
+    animation-delay: 1.2s;
 }
 .letter-E circle:nth-child(1),
 .letter-E circle:nth-child(5){
-    -webkit-animation: fillColor .4s ease forwards .4s;
-    animation: fillColor .4s ease forwards .4s;
-    animation-delay: 2.8s;
+    -webkit-animation: fillColor .2s ease forwards .2s;
+    animation: fillColor .2s ease forwards .2s;
+    animation-delay: 1.6s;
 }
 @-webkit-keyframes fillColor {
     from {
@@ -415,3 +422,5 @@ nav{
         opacity: 0
     }
 } 
+
+
